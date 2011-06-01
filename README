@@ -1,10 +1,10 @@
 This is a half-finished grid view for iOS.
 Cause Apple's UITableView only allows us to add and reuse vertical cells, we need to write our own
-scroll view when we want to have horizonal cells.
+scroll view when we want to have horizontal cells.
 
 HOW TO USE
 
 Drag the OmniGridView Folder to your project. Use the OmniGridView like any other UIView.
-Assign a delegte to OmniGridView and implement the OmniGridViewDelegate.
+Assign a delegate to OmniGridView and implement the OmniGridViewDelegate.
 
 Please refer to the OmniGridTestViewController.m to see the information you need to provide.
