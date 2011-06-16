@@ -19,4 +19,9 @@
 - (int)numberOfGridCellsInRow:(int)row inGridView:(OmniGridView *)gridView;
 - (int)numberOfRowsInGridView:(OmniGridView *)gridView;
 
+@optional
+- (void)gridView:(OmniGridView *)gridView willDisplayCell:(OmniGridCell *)cell forGridLoc:(OmniGridLoc *)gridLoc;
+- (void)gridView:(OmniGridView *)gridView didSelectCellAtLoc:(OmniGridLoc *)gridLoc;
+- (BOOL)gridView:(OmniGridView *)gridView shouldEditCellAtLoc:(OmniGridLoc *)gridLoc;
+
 @end

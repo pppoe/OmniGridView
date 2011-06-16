@@ -11,15 +11,17 @@
 #import "OmniGridLoc.h"
 #import "OmniGridViewDelegate.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 @interface OmniGridView (Private)
 
 - (NSString *)keyFromGridLoc:(OmniGridLoc *)gridLoc;
 
 @end
 
-
 @implementation OmniGridView
 @synthesize gridDelegate = _gridDelegate;
+@synthesize editing = _editing;
 
 - (id)initWithFrame:(CGRect)frame {
     
@@ -95,10 +97,33 @@
             }
         }
     }
+
+    [self performSelector:@selector(scrollViewDidScroll:) 
+               withObject:self
+               afterDelay:0.0f];
 }
 
 #pragma mark Methods
+- (void)setEditing:(BOOL)editing {
+    _editing = editing;
+}
+
 - (void)reloadData {
+    [self reloadDataAnimated:NO];
+}
+
+- (void)reloadDataAnimated:(BOOL)animated {
+    for (OmniGridCell *gridCell in [_gridCellsDict allValues])
+    {
+        [gridCell removeFromSuperview];
+    }
+    [_gridCellsDict removeAllObjects];
+    [_reusableGridCells removeAllObjects];
+    
+    CATransition *animation = [CATransition animation];
+    animation.type = kCATransitionFade;
+    [self.layer addAnimation:animation forKey:@"reloadData"];
+    [self setNeedsLayout];    
 }
 
 - (OmniGridCell *)dequeueReusableGridCell {

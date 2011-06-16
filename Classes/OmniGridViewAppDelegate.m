@@ -18,8 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
-    viewController = [[OmniGridTestViewController alloc] init];
-    [self.window addSubview:viewController.view];
+    OmniGridTestViewController *viewController = [[OmniGridTestViewController alloc] init];
+    navController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [viewController release];
+    
+    [self.window addSubview:navController.view];
     [self.window makeKeyAndVisible];
     
     return YES;
@@ -59,7 +62,7 @@
 
 
 - (void)dealloc {
-    [viewController release];
+    [navController release];
     [window release];
     [super dealloc];
 }

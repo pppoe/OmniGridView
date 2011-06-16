@@ -13,10 +13,21 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		46D546F713AA0DAA0072AEAB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46D546F613AA0DAA0072AEAB /* QuartzCore.framework */; };
 		46EE7A16138209A40072CFF6 /* OmniGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EE7A15138209A40072CFF6 /* OmniGridView.m */; };
 		46EE7A1A13820BC00072CFF6 /* OmniGridLoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EE7A1913820BC00072CFF6 /* OmniGridLoc.m */; };
 		46EE7A1D13820CEE0072CFF6 /* OmniGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EE7A1C13820CEE0072CFF6 /* OmniGridCell.m */; };
 		46EE7B1F138224880072CFF6 /* OmniGridTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EE7B1E138224880072CFF6 /* OmniGridTestViewController.m */; };
+		46EF935513AA05A90042B04C /* MainWindow(iPhone).xib in Resources */ = {isa = PBXBuildFile; fileRef = 46EF935413AA05A90042B04C /* MainWindow(iPhone).xib */; };
+		46EF942013AA05B60042B04C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		46EF942113AA05B60042B04C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		46EF942213AA05B60042B04C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		46EF942313AA05BE0042B04C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		46EF942413AA05BE0042B04C /* OmniGridViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* OmniGridViewAppDelegate.m */; };
+		46EF942513AA05BE0042B04C /* OmniGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EE7A15138209A40072CFF6 /* OmniGridView.m */; };
+		46EF942613AA05BE0042B04C /* OmniGridLoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EE7A1913820BC00072CFF6 /* OmniGridLoc.m */; };
+		46EF942713AA05BE0042B04C /* OmniGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EE7A1C13820CEE0072CFF6 /* OmniGridCell.m */; };
+		46EF942813AA05BE0042B04C /* OmniGridTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EE7B1E138224880072CFF6 /* OmniGridTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +40,7 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* OmniGridView_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OmniGridView_Prefix.pch; sourceTree = "<group>"; };
+		46D546F613AA0DAA0072AEAB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		46EE7A14138209A40072CFF6 /* OmniGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OmniGridView.h; sourceTree = "<group>"; };
 		46EE7A15138209A40072CFF6 /* OmniGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OmniGridView.m; sourceTree = "<group>"; };
 		46EE7A17138209E80072CFF6 /* OmniGridViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OmniGridViewDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +51,9 @@
 		46EE7B1D138224880072CFF6 /* OmniGridTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OmniGridTestViewController.h; sourceTree = "<group>"; };
 		46EE7B1E138224880072CFF6 /* OmniGridTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OmniGridTestViewController.m; sourceTree = "<group>"; };
 		46EE7E44138241D50072CFF6 /* OmniGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OmniGrid.h; sourceTree = "<group>"; };
+		46EF933413AA05040042B04C /* OmniGridView(iPhone).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OmniGridView(iPhone).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46EF933613AA05040042B04C /* OmniGridView(iPhone)-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OmniGridView(iPhone)-Info.plist"; sourceTree = "<group>"; };
+		46EF935413AA05A90042B04C /* MainWindow(iPhone).xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "MainWindow(iPhone).xib"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* OmniGridView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "OmniGridView-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +65,17 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EF933213AA05040042B04C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46EF942013AA05B60042B04C /* UIKit.framework in Frameworks */,
+				46EF942113AA05B60042B04C /* Foundation.framework in Frameworks */,
+				46EF942213AA05B60042B04C /* CoreGraphics.framework in Frameworks */,
+				46D546F713AA0DAA0072AEAB /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* OmniGridView.app */,
+				46EF933413AA05040042B04C /* OmniGridView(iPhone).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,8 +127,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				46EF933613AA05040042B04C /* OmniGridView(iPhone)-Info.plist */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* OmniGridView-Info.plist */,
+				46EF935413AA05A90042B04C /* MainWindow(iPhone).xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -112,6 +141,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				46D546F613AA0DAA0072AEAB /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,6 +181,23 @@
 			productReference = 1D6058910D05DD3D006BFB54 /* OmniGridView.app */;
 			productType = "com.apple.product-type.application";
 		};
+		46EF933313AA05040042B04C /* OmniGridView(iPhone) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46EF933913AA05050042B04C /* Build configuration list for PBXNativeTarget "OmniGridView(iPhone)" */;
+			buildPhases = (
+				46EF933013AA05040042B04C /* Resources */,
+				46EF933113AA05040042B04C /* Sources */,
+				46EF933213AA05040042B04C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OmniGridView(iPhone)";
+			productName = "OmniGridView(iPhone)";
+			productReference = 46EF933413AA05040042B04C /* OmniGridView(iPhone).app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,6 +218,7 @@
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* OmniGridView */,
+				46EF933313AA05040042B04C /* OmniGridView(iPhone) */,
 			);
 		};
 /* End PBXProject section */
@@ -181,6 +229,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EF933013AA05040042B04C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46EF935513AA05A90042B04C /* MainWindow(iPhone).xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,6 +253,19 @@
 				46EE7A1A13820BC00072CFF6 /* OmniGridLoc.m in Sources */,
 				46EE7A1D13820CEE0072CFF6 /* OmniGridCell.m in Sources */,
 				46EE7B1F138224880072CFF6 /* OmniGridTestViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46EF933113AA05040042B04C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46EF942313AA05BE0042B04C /* main.m in Sources */,
+				46EF942413AA05BE0042B04C /* OmniGridViewAppDelegate.m in Sources */,
+				46EF942513AA05BE0042B04C /* OmniGridView.m in Sources */,
+				46EF942613AA05BE0042B04C /* OmniGridLoc.m in Sources */,
+				46EF942713AA05BE0042B04C /* OmniGridCell.m in Sources */,
+				46EF942813AA05BE0042B04C /* OmniGridTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +297,56 @@
 				INFOPLIST_FILE = "OmniGridView-Info.plist";
 				PRODUCT_NAME = OmniGridView;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46EF933713AA05050042B04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "OmniGridView(iPhone)-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "OmniGridView(iPhone)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		46EF933813AA05050042B04C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
+				INFOPLIST_FILE = "OmniGridView(iPhone)-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					UIKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = "OmniGridView(iPhone)";
+				SDKROOT = iphoneos;
+				ZERO_LINK = NO;
 			};
 			name = Release;
 		};
@@ -268,6 +387,15 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46EF933913AA05050042B04C /* Build configuration list for PBXNativeTarget "OmniGridView(iPhone)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46EF933713AA05050042B04C /* Debug */,
+				46EF933813AA05050042B04C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

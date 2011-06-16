@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class OmniGridView;
 
 @interface OmniGridTestViewController : UIViewController {
-
+    OmniGridView *_gridView;
 }
 
 @end

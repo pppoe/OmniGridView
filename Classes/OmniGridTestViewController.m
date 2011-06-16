@@ -20,11 +20,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    OmniGridView *gridView = [[OmniGridView alloc] initWithFrame:CGRectMake(0, 0, 400, 400)];
+    UIBarButtonItem *refreshItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh
+                                                                                 target:self
+                                                                                 action:@selector(refresh)];
+    self.navigationItem.leftBarButtonItem = refreshItem;
+    [refreshItem release];
+
+    UIBarButtonItem *editItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit
+                                                                                 target:self
+                                                                                 action:@selector(edit)];
+    self.navigationItem.rightBarButtonItem = editItem;
+    [editItem release];
+    
+    OmniGridView *gridView = [[OmniGridView alloc] initWithFrame:CGRectMake(0, 0, 480, 300)];
     gridView.gridDelegate = self;
     gridView.backgroundColor = [UIColor lightGrayColor];
+    
+    _gridView = gridView;
+    
     [self.view addSubview:gridView];
     [gridView release];
+}
+
+- (void)refresh {
+    [_gridView reloadData];
+}
+
+- (void)edit {
 }
  
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -35,8 +57,6 @@
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc. that aren't in use.
 }
 
 - (void)viewDidUnload {
@@ -62,17 +82,17 @@
         gridCell.textLabel.textAlignment = UITextAlignmentCenter;
     }
     
-    gridCell.textLabel.text = [NSString stringWithFormat:@"(%d,%d)", gridLoc.row, gridLoc.col];
+    gridCell.textLabel.text = [NSString stringWithFormat:@"(%d,%d), %d", gridLoc.row, gridLoc.col, random()%10];
     
     return gridCell;
 }
 
 - (float)gridCellHeightInGridView:(OmniGridView *)gridView {
-    return 200.0f;
+    return 100.0f;
 }
 
 - (float)gridCellWidthInGridView:(OmniGridView *)gridView {
-    return 200.0f;
+    return 100.0f;
 }
 
 - (int)numberOfGridCellsInRow:(int)row inGridView:(OmniGridView *)gridView {

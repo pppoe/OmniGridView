@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class OmniGridTestViewController;
-
 @interface OmniGridViewAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-    OmniGridTestViewController *viewController;
+    UINavigationController *navController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
