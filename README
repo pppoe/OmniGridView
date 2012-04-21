@@ -8,3 +8,6 @@ Drag the OmniGridView Folder to your project. Use the OmniGridView like any othe
 Assign a delegate to OmniGridView and implement the OmniGridViewDelegate.
 
 Please refer to the OmniGridTestViewController.m to see the information you need to provide.
+
+
+Please use it freely, no limitation on distribution or modification.
